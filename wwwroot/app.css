@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: "poppins", sans-ferif;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /*background: #0008;*/
+    background-blend-mode: multiply;
+    font-size: 45px;
+}
+
+.table {
+    text-align: left;
+    padding: 0;
+    border-spacing: 0; /* or border-collapse:collapse */
+}
+
+.table tr td th {
+    text-align: left;
+    padding: 0;
+    border-spacing: 0; /* or border-collapse:collapse */
+}
+
+
+:where(h1) {
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 120px;
+    text-align: left !important;
+    width: 100%;
+    border: hidden;
+    outline: none !important;
+}
+
+
+.wrapper {
+    position: relative;
+    top: 10px;
+    color: #fff;
+    /*padding: 2rem;*/
+    width: 100%;
+}
+
+    .wrapper p {
+        width: 100%;
+        margin: 1rem 0;
+        position: relative;
+        top: 10px;
+    }
+
+    .wrapper .content {
+        color: #000000;
+        position: relative;
+        top: 30px;
+        animation: moveText 180s infinite;
+    }
+
+
+
+
+@keyframes moveText {
+
+    3%, 15% {
+        transform: translateY(0%);
+    }
+
+    20%, 25% {
+        transform: translateY(-20%);
+        background: white;
+    }
+
+    30%, 40% {
+        transform: translateY(-30%);
+        background: white;
+    }
+
+    45%, 55% {
+        transform: translateY(-50%);
+        background: white;
+    }
+
+    60%, 70% {
+        transform: translateY(-65%);
+    }
+
+    75%, 85% {
+        transform: translateY(-80%);
+    }
+}
+
+.site_header {
+    position: sticky;
+    top: 0;
+    width: 100%
+}
